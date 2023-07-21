@@ -45,7 +45,7 @@ ip_masks = []
 with open("ipList.txt", 'r') as file:
     for line in file:
             line = line.strip().split()
-            if("#" in line or line.strip() == ""):
+            if("#" in line or line == ""):
                 continue
                 
             if len(line) == 2:
